@@ -2,24 +2,31 @@
 
 ## Section A
 # 1. Write a function that prints your name
-
-
+def name():
+  print("Chevelle")
+  
+name()
 
 # 2. Write a function that accepts a name as a parameter and prints "Hello, <name>".
-
-
+def hello(name):
+  print("Hello, " + name)
 
 # 3. Loop through the list ["Alice", "Bob", "Charlie"] and call the function you just wrote.
 
+name = ["Alice", "Bob", "Charlie"]
 
+for name in names:
+    hello(name)
 
 # 4. Write a function that prints the area of two passed in parameters.
-
+def area(x,y):
+  print("The area is " + str(x * y))
 
 
 # 5. Write a function called 'print_list' that accepts a list as a parameter and then prints out each item of the list.
-
-
+def print_list(list):
+  for item in list:
+    print(item)
 
 # 6. Put the following into a function that accepts age as a parameter:
 #     1. If they are younger than 11, print "You're too young to go to this school".
@@ -27,8 +34,17 @@
 #     3. If they are over 16, print 'You're too old for school".
 #     4. If they are 0, print "You're not born yet!".
 
-
-
+def school_eligibility(age):
+  if age < 11:
+    print("You're too young to go to this school")
+  elif 11 <= age <= 16:
+    print("You can can come to this school")
+  elif age > 16:
+    print("You're too old for school")
+  elif age == 0:
+    print("You're not born yet!")
+  else:
+        print("You didn't pick a number.")
 
 # <---------------------------------------------------------------------------------------------->
 

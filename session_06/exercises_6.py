@@ -3,22 +3,31 @@
 ## Section A
 # 1. Create the following dictionary for an apple: Type = "Bramley", Price = 0.39, Colour = "Green".
 
-
+apple = {
+  "Type": "Bramley",
+  "Price": "0.39",
+  "Colour": "Green"
+}
 
 # 2. Add the best before date to the dictionary - print the dictionary.
 
-
+apple["BestBeforeDate"] = "06.07.2023"
+print(apple)
 
 # 3. Change the price to 0.41 - print the dictionary.
 
-
+apple["Price"] = "0.41"
+print(apple)
 
 # 4. Set the apple to be on offer using a Boolean - print the dictionary.
 
-
+apple["Offer"] = True
+print(apple)
 
 # 5. The offer has now expired, remove the key/value from the dictionary - print the dictionary.
 
+del(apple["Offer"])
+print(apple)
 
 # <---------------------------------------------------------------------------------------------->
 
