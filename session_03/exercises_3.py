@@ -2,7 +2,6 @@
 
 ## Section A
 # 1. Ask for the user's name, if they are called "Bob", print "Welcome Bob!".
-
 name = input("What is your name? ")
 if name == "Bob":
   print("Welcome Bob!")
@@ -57,16 +56,16 @@ salary = int(input("What is your current salary? "))
 years_of_service = int(input("What is your current years of service? "))
 
 if years_of_service > 3:
-  print(str(salary) + str(salary*0.1))
+  print("Salary: " + str(salary) + "\nBonus: " + str(salary*0.1))
 else:
-  print("No bonus")  
+  print("Salary: " + str(salary) + "\nNo bonus")  
 
 # 8. Take a whole number input, if it's positive, print out the number cubed, if it is a negative, print out half its value.
-x = int(input("Enter a number "))
-if x > 0:
-  print(x ** 3)
+integer = int(input("Enter a integer: "))
+if integer > 0:
+  print(integer ** 3)
 else:
-  print(x/2)
+  print(integer/2)
 
 
 # <---------------------------------------------------------------------------------------------->
@@ -101,38 +100,30 @@ elif 11<age<16:
 elif age>16:
   print("You're too old for school")
 else: 
-  print("You're not born yet")
+  age
 
 # 3. Ask the user to enter the name of a month. If the user enters March/April/May: print "<month> is in Spring", otherwise print "I don't know".
 #     1. Expand for the rest of the year, given that summer is June/July/August. Autumn is September/October/November. Winter is December/January/February.
 #     2. Ensure that when an unknown month is given it prints "I don't know".
 
-month = input("Enter a month ")
+month = input("Enter a month: ")
 
 if month == "March" or "April" or "May":
   print(month + " is in Spring")
-else: 
-  print("I don't know")
-
-if month == "June" or "July" or "August":
+elif month == "June" or "July" or "August":
   print(month + " is in Summer")
-else: 
-  print("I don't know")
-
-if month == "September" or "October" or "November":
+elif month == "September" or "October" or "November":
   print(month + " is in Autumn")
-else: 
-  print("I don't know")
-
-if month == "December" or "January" or "February":
+elif month == "December" or "January" or "February":
   print(month + " is in Winter")
 else: 
   print("I don't know")
 
+
 # 4. Ask the user for two different numbers, if both numbers are even, print "Even", if both numbers are odd, print "Odd", else print the product of the two numbers.
 
-number_1 = int(input("Enter a number "))
-number_2 = int(input("Enter a number "))
+number_1 = int(input("Enter a number: "))
+number_2 = int(input("Enter a number: "))
 
 if number_1 % 2 == 0 and number_2 % 2 == 0:
   print("Even")
@@ -158,12 +149,14 @@ else:
 salary = int(input("What is your current salary? "))
 years_of_service = int(input("What is your current years of service? "))
 
-if years_of_service > 5:
-  print(str(salary) + str(salary*0.15))
+if years_of_service > 7:
+  print("Salary: " + str(salary) + "\nBonus: " + str(salary*0.2))
+elif 7 >= years_of_service > 5:
+  print("Salary: " + str(salary) + "\nBonus: " + str(salary*0.15))
 elif 3 < years_of_service >= 5:
-  print(str(salary) + str(salary*0.10)))
+  print("Salary: " + str(salary) + "\nBonus: " + str(salary*0.10))
 else:
-  print("No bonus")
+  print("Salary: " + str(salary) + "\nNo bonus")
 
 # 7. Take the age and name of three people and determine who is the oldest and youngest and print out the name and age of the oldest and youngest. 
 #   If all three ages are the same, print that.
@@ -176,19 +169,19 @@ name_2 = input("What is your name? ")
 name_3 = input("What is your name? ")
 
 if age_1>age_2>age_3:
-  print(name_1 + " is the oldest and " + name_3 + "is the youngest")
+  print(name_1 + " is the oldest and " + name_3 + " is the youngest")
 elif age_1>age_3>age_2:
-  print(name_1 + " is the oldest and " + name_2 + "is the youngest")
+  print(name_1 + " is the oldest and " + name_2 + " is the youngest")
 elif age_2>age_1>age_3:
-print(name_2 + " is the oldest and " + name_3 + "is the youngest")
+  print(name_2 + " is the oldest and " + name_3 + " is the youngest")
 elif age_2>age_3>age_1:
-print(name_2 + " is the oldest and " + name_1 + "is the youngest")
+  print(name_2 + " is the oldest and " + name_1 + " is the youngest")
 elif age_3>age_1>age_2:
-print(name_3 + " is the oldest and " + name_2 + "is the youngest")
+  print(name_3 + " is the oldest and " + name_2 + " is the youngest")
 elif age_3>age_2>age_1:
-print(name_3 + " is the oldest and " + name_1 + "is the youngest")
-else age_3 == age_2 == age_1:
-print("All three ages are the same")
+  print(name_3 + " is the oldest and " + name_1 + " is the youngest")
+else:
+  print("All three ages are the same")
 
 # 8. A school has following rules for their grading system:
 #     a.	Above 80 – A
@@ -203,42 +196,18 @@ lesson = input("What is the lesson? ")
 mark_1 = int(input("What is your mark? "))
 mark_2 = int(input("What is your mark? "))
 mark_3 = int(input("What is your mark? "))
+marks = [mark_1, mark_2, mark_3]
 
-if mark_1<25:
-  print("F")
-elif 25 <= mark_1 < 45:
-  print("E")
-elif 45 <= mark_1 < 50:
-  print("D")
-elif 50 <= mark_1 < 60:
-  print("C")  
-elif 60 <= mark_1 < 80:
-  print("B")
-else:
-  print("A")
-
-if mark_2<25:
-  print("F")
-elif 25 <= mark_2 < 45:
-  print("E")
-elif 45 <= mark_2 < 50:
-  print("D")
-elif 50 <= mark_2 < 60:
-  print("C")  
-elif 60 <= mark_2 < 80:
-  print("B")
-else:
-  print("A")
-
-if mark_3<25:
-  print("F")
-elif 25 <= mark_3 < 45:
-  print("E")
-elif 45 <= mark_3 < 50:
-  print("D")
-elif 50 <= mark_3 < 60:
-  print("C")  
-elif 60 <= mark_3 < 80:
-  print("B")
-else:
-  print("A")
+for i in marks:
+  if i<25:
+    print("F") 
+  elif 25 <= i < 45:
+    print("E")
+  elif 45 <= i < 50:
+    print("D")
+  elif 50 <= i < 60:
+    print("C")
+  elif 60 <= i < 80:
+    print("B")
+  else:
+    print("A")
