@@ -56,8 +56,8 @@ for i in range(1,101,2):
 
 not_held = [1916, 1940, 1944, 2020]
 for olympics_year in range(1896, 2023, 4):
-  if olympics_year not in not_held
-  print(olympics_year)
+  if olympics_year not in not_held:
+    print(olympics_year)
 
 # 5. Create a list of ten random numbers. Loop through your list and count the number of even numbers and the number of odd numbers.
 
@@ -66,10 +66,10 @@ even_count = 0
 odd_count = 0
 
 for i in numbers:
-    if i % 2 == 0:
-        even_count = even_count + 1
-    else:
-         odd_count = odd_count + 1
+  if i % 2 == 0:
+    even_count = even_count + 1
+  else:
+    odd_count = odd_count + 1
 
 print("This list has " + str(even_count) + " even numbers and " + str(odd_count) + " odd numbers.")
 
