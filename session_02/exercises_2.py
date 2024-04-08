@@ -67,7 +67,7 @@ for i in range(len(temperature)):
 print("It is " + month + " and the average temperature is " + str(average_temperature) + " degrees celsius")
 
 # 11. Print out the above sentence but make the month upper case.
-print("It is " + month.upper() + " and the average temperature is " + str(average_temperature) + "degrees celsius")
+print("It is " + month.upper() + " and the average temperature is " + str(average_temperature) + " degrees celsius")
 
 # 12. Create a variable that holds your favourite animals and print it out. 
 #    Make sure the animals are all on different lines and tabbed.
@@ -76,7 +76,7 @@ favourite_animals = "My favourite animals:\n\tCats,\n\tDogs,\n\tTigers"
 # 13. Ask the user to enter their name as well as a number. 
 #    Print out the uppercase character at that position in the string.
 name = input("What is your name? ")
-number = int(input("Pick a number? "))
+number = int(input("Pick a number: "))
 print(name[number].upper())
 
 # 14. Slice the string with steps of 2, excluding the first and last characters of the string "WelcometoPython".
