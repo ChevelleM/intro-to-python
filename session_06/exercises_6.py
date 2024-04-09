@@ -59,27 +59,27 @@ menu = [
   {
     "Name": "Pasta alla vodka",
     "Price": "15.00",
-    "Vegetarian": "Yes"
+    "Vegetarian": True
   },
   {
     "Name": "Tiramisu",
     "Price": "7.50",
-    "Vegetarian": "Yes"
+    "Vegetarian": True
   },
   {
-    "Name": "Pasta alla vodka",
-    "Price": "0.39",
-    "Vegetarian": "Yes"
+    "Name": "Pad Thai",
+    "Price": "10.50",
+    "Vegetarian": False
   },
   {
-    "Name": "Pasta alla vodka",
-    "Price": "0.39",
-    "Vegetarian": "Yes"
+    "Name": "Nasi lemak",
+    "Price": "13.50",
+    "Vegetarian": False
   },
   {
-    "Name": "Pasta alla vodka",
-    "Price": "0.39",
-    "Vegetarian": "Yes"
+    "Name": "Panna cotta",
+    "Price": "6.50",
+    "Vegetarian": True
   }
 ]
 
